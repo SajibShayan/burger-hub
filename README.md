@@ -15,6 +15,6 @@ bun dev
 
 # live link
 
-[https://burger-hub-nu.vercel.app/]
+(https://burger-hub-nu.vercel.app/)
 
 ```

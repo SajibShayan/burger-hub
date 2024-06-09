@@ -1,4 +1,4 @@
-## BurgerHub
+## Burger Hub
 ## Getting Started
 
 First, run the development server:
@@ -14,8 +14,7 @@ bun dev
 
 
 # live link
-https://burger-hub-nu.vercel.app/
 
+[https://burger-hub-nu.vercel.app/]
 
 ```
-

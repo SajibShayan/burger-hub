@@ -12,7 +12,7 @@ const ReservationForm = () => {
       
       {/* input */}
       <div className="mt-[2rem]">
-        <div className="flex flex-col md:flex-row space-y-3 items-center w-[100%] mx-auto space-x-0 justify-between">
+        <div className="flex flex-col md:flex-row space-y-3 items-end w-[100%] mx-auto space-x-0 justify-between">
             <select className="px-10 py-2.5 bg-transparent rounded-lg md:w-[45%] w-[100%] outline-none font-bold text-[17px] text-white border-[2.2px] border-gray-100" name="people" id="people">
                <option value="1"   className="text-black">1 People</option>
                <option value="2"  className="text-black">2 People</option>

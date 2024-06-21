@@ -8,20 +8,93 @@
     .clip_path {
         clip-path: polygon(50% 0%, 100% 1%, 100% 84%, 50% 100%, 0 85%, 0% 60%, 0 0);
     }
+
     .heading {
         @apply text-[30px] md:text-[35px] lg:text-[45px] xl:text-[50px] uppercase font-bold text-gray-900 md:leading-[4rem] leading-[3rem] text-center
     }
+
+    .active {
+        @apply block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500;
+    }
+
+    .categories {
+        @apply px-4 py-2 text-[16px] bg-white border border-solid border-[#418513] transition-all duration-200 hover:bg-[#418513] flex items-center rounded-full space-x-2 text-[#418513] hover:text-white text-center justify-center cursor-pointer font-semibold;
+    }
+
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-   filter: invert(1);
+    filter: invert(1);
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
-   filter: invert(1);
+    filter: invert(1);
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator::after {
     filter: invert(1);
- }
- 
+}
+
+@media (min-width: 1200px) {
+
+    .container,
+    .container-sm,
+    .container-md,
+    .container-lg,
+    .container-xl {
+        max-width: 1140px;
+    }
+}
+
+.cata-sub-nav {
+    padding: 20px 0;
+    margin: 30px 37px;
+    /* Make this scrollable when needed */
+    overflow-x: auto;
+    /* We don't want vertical scrolling */
+    overflow-y: hidden;
+    /* Make an auto-hiding scroller for the 3 people using a IE */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* For WebKit implementations, provide inertia scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* We don't want internal inline elements to wrap */
+    white-space: nowrap;
+    /* Remove the default scrollbar for WebKit implementations */
+}
+
+.cata-sub-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.cata-sub-nav ul {
+    margin: 0;
+    display: flex;
+    -webkit-padding-start: 0px;
+}
+
+.cata-sub-nav li {
+    display: inline-table;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+        max-width: 1140px;
+    }
+}
+@media (max-width: 992px) {
+    .container, .container-sm, .container-md, .container-lg {
+        max-width: 960px;
+    }
+}
+@media (max-width: 768px) {
+    .container, .container-sm, .container-md {
+        max-width: 720px;
+    }
+}
+@media (max-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px;
+    }
+}

@@ -1,8 +1,10 @@
+'use client'
 import Link from "next/link";
 import React from "react";
 import { BiCycling, BiShoppingBag } from "react-icons/bi";
 import { FaBurger } from "react-icons/fa6";
 import { HiBars3BottomRight } from "react-icons/hi2";
+import CurretnPath from "@/utils/helper";
 
 
 interface props {
@@ -10,8 +12,10 @@ interface props {
 }
 
 const Nav = ({ openNav }: props) => {
+
+  
   return (
-    <div className="h-[12vh] bg-white">
+    <div className="h-[12vh] bg-white border border-solid border-[#ccc]]">
       <div className="sm:w-[90%] w-[95%] mx-auto flex h-[100%] items-center justify-between">
         {/* logo div */}
         <div className="flex items-center space-x-2">
@@ -23,13 +27,13 @@ const Nav = ({ openNav }: props) => {
         {/* nav div */}
         <ul className="hidden lg:flex items-center space-x-10">
           <li className=" text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Home</Link>
+            <Link href="/" className={CurretnPath("/") ? "active" : ""}>Home</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
             <Link href="/">Shop</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
-            <Link href="/">Menu</Link>
+            <Link href="/menu" className={CurretnPath("/menu") ? "active" : ""}>Menu</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
             <Link href="/">Blog</Link>

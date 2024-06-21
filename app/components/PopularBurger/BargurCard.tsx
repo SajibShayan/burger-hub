@@ -12,6 +12,7 @@ interface props {
 
 const BargurCard = ({ title, image, reviews, price }: props) => {
   return (
+    
     <div className="bg-white p-6 rounded-lg m-3">
       {/* img div */}
       <div className="w-[200px] mx-auto h-[200px]">

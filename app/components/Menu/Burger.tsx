@@ -62,7 +62,7 @@ const items = [
 
 const Burger = () => {
     return (
-        <div className="py-[3rem] flex justify-center">
+        <section className="py-[3rem] flex justify-center" id='burgers section'>
           <div className="container flex flex-col w-full justify-center">
             <div className='text-center mb-10 mx-3'>
             <h1 className="heading md:text-start text-[37px] font-bold leading-10 mb-5">Burgers</h1>
@@ -82,7 +82,7 @@ const Burger = () => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
       );
 }
 

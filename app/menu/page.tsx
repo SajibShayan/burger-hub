@@ -8,6 +8,8 @@ import Crinkle from "../components/Menu/Crinkle";
 import Flat from "../components/Menu/Flat";
 import Shakes from "../components/Menu/Shakes";
 import SoftDrink from "../components/Menu/SoftDrink";
+import Beer from "../components/Menu/Beer";
+import Woof from "../components/Menu/Woof";
 
 
 const Meunu = () => {
@@ -23,6 +25,8 @@ const Meunu = () => {
       <Flat />
       <Shakes />
       <SoftDrink />
+      <Beer />
+      <Woof />
     </div>
   );
 };

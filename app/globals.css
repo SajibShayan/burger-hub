@@ -13,7 +13,7 @@
         @apply text-[30px] md:text-[35px] lg:text-[45px] xl:text-[50px] uppercase font-bold text-gray-900 md:leading-[4rem] leading-[3rem] text-center
     }
 
-    .active {
+    .nav-active {
         @apply block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500;
     }
 
@@ -97,4 +97,24 @@ input[type="time"]::-webkit-calendar-picker-indicator::after {
     .container, .container-sm {
         max-width: 540px;
     }
+}
+
+nav{
+  position: sticky;
+  top: 0;
+
+
+  li{
+    display: inline-block;
+  }
+  a{
+    
+    text-decoration: none;
+  }
+  .active{
+    a{
+    background-color: #418513;
+    color: white;
+    }
+  }
 }

@@ -26,7 +26,7 @@ const items = [
 
 const Shakes = () => {
   return (
-    <div className="pb-[3rem] flex justify-center">
+    <section className="pb-[3rem] flex justify-center" id='shakes'>
           <div className="container flex flex-col w-full justify-center">
             <div className='text-center mb-10 mx-3'>
             <h1 className="heading md:text-start text-[37px] font-bold leading-10 mb-5">Shakes + frozen custard</h1>
@@ -45,7 +45,7 @@ const Shakes = () => {
               ))}
             </div>
           </div>
-        </div>
+        </section>
   )
 }
 

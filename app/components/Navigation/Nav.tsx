@@ -27,13 +27,13 @@ const Nav = ({ openNav }: props) => {
         {/* nav div */}
         <ul className="hidden lg:flex items-center space-x-10">
           <li className=" text-[20px] font-medium hover:text-red-600">
-            <Link href="/" className={CurretnPath("/") ? "active" : ""}>Home</Link>
+            <Link href="/" className={CurretnPath("/") ? "nav-active" : ""}>Home</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
             <Link href="/">Shop</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
-            <Link href="/menu" className={CurretnPath("/menu") ? "active" : ""}>Menu</Link>
+            <Link href="/menu" className={CurretnPath("/menu") ? "nav-active" : ""}>Menu</Link>
           </li>
           <li className=" text-[20px] font-medium hover:text-red-600">
             <Link href="/">Blog</Link>
